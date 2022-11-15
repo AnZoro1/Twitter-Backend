@@ -4,7 +4,7 @@ const app = express()
 app.use(express.json())
 app.use(require('./routes/users.route.js'))
 app.use(require('./routes/twitts.route.js'))
-app.use(require('./routes/saves.route.js'))
+
 app.use(require('./routes/comments.route.js'))
 mongoose
   .connect(
